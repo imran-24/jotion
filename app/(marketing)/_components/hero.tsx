@@ -6,20 +6,32 @@ const Hero = () => {
     return ( 
         <div className="max-w-5xl ">
             <div className="flex relative items-center gap-x-6">
-                <div className="flex relative  items-center h-[280px] w-[280px] md:w-[300px] md:h-[300px] ">
+                <div className="flex relative  items-center h-[300px] w-[300px] md:w-[350px] md:h-[350px] ">
                     <Image 
                     alt="document"
                     src={'/documents.png'}
                     fill
-                    className="object-contain"
+                    className="object-contain dark:hidden"
+                    />
+                    <Image 
+                    alt="document"
+                    src={'/documents-dark.png'}
+                    fill
+                    className="object-contain dark:block hidden"
                     />
                 </div>
-                <div className="w-[300px] relative lg:flex hidden h-[300px]">
+                <div className="w-[350px] relative lg:flex hidden h-[350px]">
                     <Image 
                     alt="document"
                     src={'/reading.png'}
                     fill
-                    className="object-contain"
+                    className="object-contain dark:hidden"
+                    />
+                    <Image 
+                    alt="document"
+                    src={'/reading-dark.png'}
+                    fill
+                    className="object-contain dark:block hidden"
                     />
                 </div>
             </div>

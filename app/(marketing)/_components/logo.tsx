@@ -16,7 +16,15 @@ const Logo = () => {
             alt="Logo"
             src={'/logo.svg'}
             width={30}
-            height={30}            
+            height={30} 
+            className="dark:hidden"           
+            />
+            <Image
+            alt="Logo"
+            src={'/logo-dark.svg'}
+            width={30}
+            height={30} 
+            className="dark:block hidden"           
             />
             <p className={cn(font.className, "font-semibold text-sm")}>
                 Jotion
